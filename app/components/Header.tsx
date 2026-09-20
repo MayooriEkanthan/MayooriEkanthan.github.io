@@ -1,0 +1,63 @@
+import Link from "next/link";
+import Image from "next/image";
+
+export default function Header(): React.JSX.Element {
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#110720]/80 backdrop-blur-sm border-b border-white/10">
+      <nav className="px-6 py-4">
+        <div className="container mx-auto max-w-6xl flex items-center justify-between h-full">
+          <Link
+            href="/"
+            className="text-3xl font-bold text-white hover:text-purple-400 transition-colors"
+            style={{ fontFamily: 'var(--font-dancing)' }}
+          >
+            Mayoori Ekanthan
+          </Link>
+          <ul className="flex items-center gap-6 lg:gap-8 list-none m-0 p-0 overflow-x-auto hide-scrollbar">
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#home" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Home
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#about" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                About Me
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#education" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Education
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#experience" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Experience
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#skills" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Skills
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#projects" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Projects
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#leadership" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Leadership
+              </Link>
+            </li>
+            <li className="m-0 p-0 shrink-0">
+              <Link href="#contact" className="text-white hover:text-purple-400 transition-colors text-sm md:text-base font-normal">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
